@@ -7,3 +7,8 @@ $('#toggle').click(function() {
               $('#overlay').removeClass('open');
               $('#toggle').removeClass('active');
           });
+
+          $('.off').click(function() {
+              $('#overlay').removeClass('open');
+              $('#toggle').removeClass('active');
+          });
