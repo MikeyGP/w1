@@ -16,18 +16,19 @@ body {
     transition:500ms ease;
     background:transparent;
     position: fixed;
-    height: 75px;
+    height: 80px;
     width: 100%;
     top: 0;
     z-index: 50000;
+    visibility: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
 }
 .navbar-scrolled {
-    background: rgb(45,45,45);
-    position: fixed;
-    top: 0;
-    height: 75px;
-    width: 100%;
-    z-index: 50000;
+    background: rgb(39,43,45);
+    visibility: visible;
 }
 
 button:active, button:focus, section:active, section:focus, a:active, a:focus  { 
@@ -41,6 +42,13 @@ a {
     font-weight: 400;
     color: rgb(196,154,108);
     text-align: center;
+}
+.logo-large {
+    width: 200px;
+    cursor: pointer;
+}
+.logo-horizontal {
+  
 }
 a>img {
     margin-left: 10px;
@@ -66,7 +74,7 @@ h3 {
     letter-spacing: 0.04em;
     color: rgb(39,43,45);
     text-align: center;
-    margin: 15px 0 20px 0; 
+    margin: 25px 0 30px 0; 
 }
 h4 {
    font-weight: 300;
@@ -94,6 +102,36 @@ h6 {
     margin: 15px 0 20px 0;
     text-align: left;
 }
+
+button {
+  cursor: pointer;
+  display: block;
+  width: 25%;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgb(196,154,108);
+  color: rgb(196,154,108);
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  padding: 10px 30px;
+  background: none;
+}
+button:hover, button:active, button:focus {
+  color: white;
+  background: rgb(196,154,108);
+}
+.team-member > button {
+    width: 150px;
+    margin-top: 2rem;
+}
+.slide > button {
+    width: 30%;
+}
+.offer-button {
+    width: 200px;
+}
+
 .header {
     text-align: center;
     padding-bottom: 50px;
@@ -118,6 +156,10 @@ h6 {
 .col {
     width: 47%;
     text-align: justify;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
 }
 .col li {
    font-size: 14px;
@@ -128,7 +170,7 @@ h6 {
     margin-left: 15px;
 }
 .ctnr {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -163,9 +205,29 @@ header {
     border-bottom: 1px solid white;
     padding-bottom: 5px;
 }
+
+.icon-mouse {
+    visibility: visible;
+    transition: 500ms ease;
+    width: 40px;
+    position: fixed;
+    bottom: 10vh;
+    animation: blink 2s ease-in infinite;
+    left: 50%;
+    margin-left: -20px;
+}
+.mouse-off {
+    visibility: hidden;
+}
+@keyframes blink {
+  from, to { opacity: 1 }
+  50% { opacity: 0.4 }
+}
+
 .slideshow {
   height: 50vh;
-    margin-bottom: 40vh;
+  margin-bottom: 40vh;
+  text-align:center;
 }
 
 .slideshow > div {
@@ -174,12 +236,12 @@ header {
   left: 10px;
   right: 10px;
   bottom: 10px;
-    margin: 40vh auto;
+  margin: 40vh auto;
 }
 
 .slide {
     text-align: center;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     margin-top: 25vh;
 }
@@ -213,7 +275,6 @@ header {
 
 .two-col {
     display: flex;
-   display: flex;
     justify-content: space-between;
 }
 .about {
@@ -281,6 +342,14 @@ header {
     display: block;
     font-size: 14px;
 }
+.icon-offer {
+    width: 15%;
+}
+/*
+.offer .col {
+    text-align: center;
+}
+*/
 
 /*TEAM*/
 
@@ -292,7 +361,7 @@ header {
 }
 .team-ctnr {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
     padding-top: 20px;
 }
@@ -313,12 +382,19 @@ header {
 }
 .team-member p:nth-of-type(3) {
     text-align: justify;
+    padding: 0 30px;
+}
+
+.team-member p:nth-of-type(2) {
+    margin-bottom: 30px;
 }
 
 /*KONTAKT*/
 
 .contact {
     background: url(../images/contact-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .branch-ctnr {
     text-align: center;
@@ -352,6 +428,9 @@ header {
     background: rgb(196,154,108);
     padding: 15px 0;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 .footer p {
     color: white;
@@ -647,4 +726,10 @@ header {
     background-color: rgba(196,154,108,0.7);
     opacity:1;filter:"alpha(opacity=100)";
     -ms-filter:"alpha(opacity=100)";
+}
+
+/*zakres usług*/
+
+header {
+    padding-bottom: 40px;
 }
