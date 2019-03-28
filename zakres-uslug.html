@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="utf-8" />
+    <title>Kancelaria Radcy Prawnego Jakub Wróblewski</title>
+    <meta name="description" content="Kancelaria Radcy Prawnego Jakub Wróblewski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&amp;subset=latin-ext" rel="stylesheet">
+  </head> 
+  
+  <body>
+      <a href="#" id="scroll" style="display: none;"><span></span></a>
+      <div class="navbar"><a href="index.html"><img src="images/logo-horizontal.svg" alt="Kancelaria Radcy Prawnego Jakub Wróblewski" class="logo-large"/></a></div>
+      <header>
+          
+          <div class="button_container" id="toggle">
+              <span class="top"></span>
+              <span class="middle"></span>
+              <span class="bottom"></span>
+          </div>
+
+          <div class="overlay" id="overlay">
+              <nav class="overlay-menu">
+                  <ul>
+                      <li><a href="index.html">S. główna</a></li>
+                      <li><a href="index.html#okancelarii">O kancelarii</a></li>
+                      <li><a href="zakres-uslug.html">Zakres usług</a></li>
+                      <li><a href="zespol.html">Zespół</a></li>
+                      <li><a href="index.html#kontakt">Kontakt</a></li>
+                  </ul>
+              </nav>
+          </div>
+          
+          <a href="index.html"><img src="images/logo.svg" alt="Kancelaria Radcy Prawnego Jakub Wróblewski" class="logo-large"/></a>
+   
+      </header>
+  
+      <section class="offer off" id="oferta">
+          <div class="ctnr">
+              <div class="header">
+                  <p>W czym możemy Ci pomóc?</p>
+                  <h2>ZAKRES USŁUG</h2>
+                  <p>Kancelaria świadczy kompleksową pomoc prawną na rzecz podmiotów gospodarczych i klientów indywidualnych.</p>
+              </div>
+              <div class="two-col">
+                  <div class="col" id="offer1">
+                      <img src="images/icon-01.svg" alt="Podmioty gospodarcze" class="icon-offer"/>
+                      <h3>Podmioty gospodarcze</h3>
+                      <p>Kancelaria zapewnia kompleksową obsługę prawną podmiotów gospodarczych m.in. z zakresu prawa Cywilnego, Gospodarczego i Handlowego oraz Prawa Administracyjnego i Prawa Zamówień Publicznych, poprzez:</p>
+                      <br/>
+                      <ul>
+                          <li>stałe doradztwo prawne;</li>
+                          <li>uczestnictwo w negocjacjach;</li>
+                          <li>reprezentowanie przed sądami powszechnymi i administracyjnymi oraz organami administracji publicznej;</li>
+                          <li>reprezentowanie w postępowaniach egzekucyjnych;</li>
+                          <li>sporządzenie dokumentacji niezbędnej do rejestracji wybranej przez Klienta formy prawnej prowadzonej działalności gospodarczej, w tym umów spółek prawa handlowego oraz rejestrację podmiotów w KRS;</li>
+                          <li>sporządzenie i opiniowanie umów;</li>
+                          <li>dochodzenie roszczeń o zapłatę w imieniu wierzycieli oraz pomoc prawna dla dłużników;</li>
+                          <li>pomoc prawną w postępowaniach o udzielenie zamówienia publicznego;</li>
+                          <li>prowadzenie spraw pracowniczych podmiotu gospodarczego.</li>
+                      </ul>
+                  </div>   
+                  
+                  <div class="col" id="offer2">
+                      <img src="images/icon-02.svg" alt="Klienci indywidualni" class="icon-offer"/>
+                      <h3>Klienci indywidualni</h3>
+                      <p>Kancelaria świadczy usługi prawne na rzecz Klientów indywidualnych, w szczególności poprzez udzielanie porad prawnych, reprezentowanie we wszystkich sprawach przed sądami powszechnymi i administracyjnymi wszystkich instancji oraz przed organami administracji publicznej.</p><br/>
+        
+                      <p>Kancelaria świadczy pomoc prawną w sprawach cywilnych i rodzinnych, w szczególności:</p>
+                      <br/>
+                      <ul>
+                          <li>o zapłatę, w tym dochodzenie roszczeń w imieniu wierzycieli oraz pomoc prawna dla dłużników;</li>
+                          <li>o odszkodowanie i zadośćuczynienie;</li>
+                          <li>o zasiedzenie;</li>
+                          <li>o niewykonanie lub nienależyte wykonanie umów;</li>
+                          <li>spadkowych, w tym o stwierdzenie nabycia spadku, o zachowek, o uznanie spadkobiercy za niegodnego dziedziczenia i dział spadku;</li>
+                          <li>wieczystoksięgowych, w tym przygotowywanie wniosków o wpis lub wykreślenie praw i roszczeń, o uzgodnienie księgi wieczystej z rzeczywistym stanem prawnym nieruchomości;</li>
+                          <li>dotyczących nabywania, zbywania, najmu i dzierżawy nieruchomości;</li>
+                          <li>egzekucyjnych;</li>
+                          <li>o rozwód;</li>
+                          <li>o separację;</li>
+                          <li>o alimenty, w tym podwyższenie, obniżenie, stwierdzenie wygaśnięcia obowiązku alimentacyjnego i egzekucję;</li>
+                          <li>o ubezwłasnowolnienie.</li>
+                      </ul>
+                     
+                      </div>
+<!--                      <button class="expand-button">Więcej <img src="images/arrow.svg" alt="więcej"/></button>-->
+                      
+                  </div>
+
+              </div>
+       
+      </section>
+
+      <section class="footer">
+          <div class="ctnr">
+              <p>Jakub Wróblewski Kancelaria Radcy Prawnego. Wszystkie prawa zastrzeżone</p>
+          </div>
+      </section>
+      <script>
+      $(document).ready(function(){ 
+                $(window).scroll(function(){ 
+                    if ($(this).scrollTop() > 100) { 
+                        $('#scroll').fadeIn(); 
+                    } else { 
+                        $('#scroll').fadeOut(); 
+                      } 
+                    }); 
+                $('#scroll').click(function(){ 
+                $("html, body").animate({ scrollTop: 0 }, 600); 
+                    return false; 
+               }); 
+            });
+      </script>
+      
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="js/menu.js"></script>
+      <script src="js/smooth-scroll.js"></script>
+      <script>
+      $(document).ready(function(){ 
+                $(window).scroll(function(){ 
+                    if ($(this).scrollTop() > 100) { 
+                        $('#scroll').fadeIn(); 
+                    } else { 
+                        $('#scroll').fadeOut(); 
+                      } 
+                    }); 
+                $('#scroll').click(function(){ 
+                $("html, body").animate({ scrollTop: 0 }, 600); 
+                    return false; 
+               }); 
+            });
+      </script>
+      <script>
+          $(window).scroll(function(){
+	      $('.navbar').toggleClass('navbar-scrolled', $(this).scrollTop() > 50);
+          });
+      </script>
+      
+  
+      <script>
+      $(".slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('.slideshow > div:first')
+    .fadeOut(1500)
+    .next()
+    .fadeIn(1500)
+    .end()
+    .appendTo('.slideshow');
+}, 3500);</script>
+  </body>
+
+</html>

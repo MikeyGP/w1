@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="utf-8" />
+    <title>Kancelaria Radcy Prawnego Jakub Wróblewski</title>
+    <meta name="description" content="Kancelaria Radcy Prawnego Jakub Wróblewski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&amp;subset=latin-ext" rel="stylesheet">
+  </head> 
+  
+  <body>
+      <a href="#" id="scroll" style="display: none;"><span></span></a>
+      <div class="navbar"><a href="index.html"><img src="images/logo-horizontal.svg" alt="Kancelaria Radcy Prawnego Jakub Wróblewski" class="logo-large"/></a></div>
+      <header>
+          
+          <div class="button_container" id="toggle">
+              <span class="top"></span>
+              <span class="middle"></span>
+              <span class="bottom"></span>
+          </div>
+
+          <div class="overlay" id="overlay">
+              <nav class="overlay-menu">
+                  <ul>
+                      <li><a href="index.html">S. główna</a></li>
+                      <li><a href="index.html#okancelarii">O kancelarii</a></li>
+                      <li><a href="zakres-uslug.html">Zakres usług</a></li>
+                      <li><a href="zespol.html">Zespół</a></li>
+                      <li><a href="index.html#kontakt">Kontakt</a></li>
+                  </ul>
+              </nav>
+          </div>
+          
+          <a href="index.html"><img src="images/logo.svg" alt="Kancelaria Radcy Prawnego Jakub Wróblewski" class="logo-large"/></a>
+          
+      </header>
+    
+      
+      
+      
+      
+      <section class="team off" id="zespol">
+          <div class="ctnr">
+              <div class="header">
+                  <p>Poznaj nas</p>
+                  <h2>ZESPÓŁ</h2>
+                  <p>Zespół Kancelarii tworzą radcy prawni z wieloletnim doświadczeniem zawodowym w różnych dziedzinach prawa. Członkowie zespołu stale podnoszący swoje kwalifikacje zawodowe, a świadczone przez kancelarię usługi wykonywane są w sposób profesjonalny i z zachowaniem najwyższej staranności.</p>
+              </div>
+              <div class="team-ctnr">
+                  <div class="team-member" id="team1">
+                      <img src="images/team-1.png" alt="Jakub Wroblewski"/>
+                      <p>Jakub Wróblewski</p>
+                      <p>Radca Prawny</p>
+                      <p>Radca Prawny Jakub Wróblewski jest członkiem Okręgowej Izby Radców Prawnych, wpisanym na listę radców prawnych przy Okręgowej Izbie Radców Prawnych w Olsztynie pod numerem OL-1650. Specjalizuje się w sporach sądowych w zakresie prawa cywilnego, ze szczególnym nastawieniem na prawo zobowiązań, prawa gospodarczego oraz prawa rodzinnego. Obecnie prowadzi stałą obsługę prawną na rzecz jednostek samorządu terytorialnego, spółek prawa handlowego, jednoosobowych przedsiębiorców oraz osób fizycznych. Od 2018 r. swoją wiedzą i doświadczeniem wspiera w zakresie pomocy osobom poszkodowanym Stowarzyszenie Odszkodowania-Expert. Radca Prawny Jakub Wróblewski jest założycielem kancelarii.</p>
+                    
+                  </div>
+                  <div class="team-member" id="team2">
+                      <img src="images/team-1.png" alt="Jakub Wroblewski"/>
+                      <p>Karol Bator</p>
+                      <p>Radca Prawny</p>
+                      <p>Radca Prawny Karol Bator jest wpisany na listę radców prawnych przy Okręgowej Izbie Radców Prawnych w Olsztynie pod numerem OL-1537. Specjalizuje się w prawie cywilnym ze szczególnym uwzględnieniem prawa zobowiązań, w tym kontraktów budowlanych, prawie odszkodowawczym i zamówień publicznych. Począwszy od 2018 r. współpracuje ze stowarzyszeniem Odszkodowania -Expert w zakresie wsparcia prawnego osób poszkodowanych. Posiada wieloletnie doświadczenie w obsłudze jednostek sektora finansów publicznych, przedsiębiorców i klientów indywidualnych. Radca Prawny Karol Bator stale współpracuje z kancelarią.</p>
+                      
+                  </div>
+                  <div class="team-member" id="team3">
+                      <img src="images/team-1.png" alt="Jakub Wroblewski"/>
+                      <p>Justyna Bukowska</p>
+                      <p>Radca Prawny</p>
+                      <p>Radca Prawny Justyna Bukowska jest wpisana na listę radców prawnych przy Okręgowej Izbie Radców Prawnych w Olsztynie pod numerem OL-1828. Specjalizuje się w prawie cywilnym, administracyjnym, oświatowym. Prowadzi stałą obsługę prawną na rzecz jednostek samorządu terytorialnego i posiada wieloletnie doświadczenie w obsłudze podmiotów publicznych. Biegle włada językiem francuskim i angielskim. Radca Prawny Justyna Bukowska stale współpracuje z kancelarią.</p>
+                      
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="footer">
+          <div class="ctnr">
+              <p>Jakub Wróblewski Kancelaria Radcy Prawnego. Wszystkie prawa zastrzeżone</p>
+          </div>
+      </section>
+      <script>
+      $(document).ready(function(){ 
+                $(window).scroll(function(){ 
+                    if ($(this).scrollTop() > 100) { 
+                        $('#scroll').fadeIn(); 
+                    } else { 
+                        $('#scroll').fadeOut(); 
+                      } 
+                    }); 
+                $('#scroll').click(function(){ 
+                $("html, body").animate({ scrollTop: 0 }, 600); 
+                    return false; 
+               }); 
+            });
+      </script>
+      
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="js/menu.js"></script>
+      <script src="js/smooth-scroll.js"></script>
+      <script>
+      $(document).ready(function(){ 
+                $(window).scroll(function(){ 
+                    if ($(this).scrollTop() > 100) { 
+                        $('#scroll').fadeIn(); 
+                    } else { 
+                        $('#scroll').fadeOut(); 
+                      } 
+                    }); 
+                $('#scroll').click(function(){ 
+                $("html, body").animate({ scrollTop: 0 }, 600); 
+                    return false; 
+               }); 
+            });
+      </script>
+      <script>
+          $(window).scroll(function(){
+	      $('.navbar').toggleClass('navbar-scrolled', $(this).scrollTop() > 50);
+          });
+      </script>
+      <script>
+          $('.expand-button').on('click', function(){
+  $('.special-text').toggleClass('-expanded');
+  
+  if ($('.special-text').hasClass('-expanded')) {
+    $('.expand-button').html('Zwiń');
+  } else {
+    $('.expand-button').html('Rozwiń');
+  }
+});
+      </script>
+      <script>
+          $('.expand-button2').on('click', function(){
+  $('.special-text2').toggleClass('-expanded2');
+  
+  if ($('.special-text2').hasClass('-expanded2')) {
+    $('.expand-button2').html('Mniej');
+  } else {
+    $('.expand-button2').html('Więcej');
+  }
+});
+          $('.expand-button3').on('click', function(){
+  $('.special-text3').toggleClass('-expanded2');
+  
+  if ($('.special-text3').hasClass('-expanded2')) {
+    $('.expand-button3').html('Mniej');
+  } else {
+    $('.expand-button3').html('Więcej');
+  }
+});
+          $('.expand-button4').on('click', function(){
+  $('.special-text4').toggleClass('-expanded2');
+  
+  if ($('.special-text4').hasClass('-expanded2')) {
+    $('.expand-button4').html('Mniej');
+  } else {
+    $('.expand-button4').html('Więcej');
+  }
+});
+      </script>
+      <script>
+      $(".slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('.slideshow > div:first')
+    .fadeOut(1500)
+    .next()
+    .fadeIn(1500)
+    .end()
+    .appendTo('.slideshow');
+}, 3500);</script>
+  </body>
+
+</html>
