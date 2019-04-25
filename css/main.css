@@ -76,11 +76,10 @@ h3 {
     margin: 25px 0 30px 0; 
 }
 h4 {
-   font-weight: 300;
+    font-weight: 300;
     font-size: 16px;
     letter-spacing: 0.04em;
     color: rgb(39,43,45);
-    
     margin: 15px 0 20px 0;  
 }
 h5 {
@@ -103,18 +102,18 @@ h6 {
 }
 
 button {
-  cursor: pointer;
-  display: block;
-  width: 25%;
-  margin-top: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid rgb(196,154,108);
-  color: rgb(196,154,108);
-  font-size: 0.9rem;
-  letter-spacing: 0.5px;
-  padding: 10px 30px;
-  background: none;
+    cursor: pointer;
+    display: block;
+    width: 25%;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(196,154,108);
+    color: rgb(196,154,108);
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    padding: 10px 30px;
+    background: none;
 }
 button:hover, button:active, button:focus {
   color: white;
@@ -224,18 +223,18 @@ header {
 }
 
 .slideshow {
-  height: 50vh;
-  margin-bottom: 40vh;
-  text-align:center;
+    height: 50vh;
+    margin-bottom: 40vh;
+    text-align:center;
 }
 
 .slideshow > div {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-  margin: 40vh auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    margin: 40vh auto;
 }
 
 .slide {
@@ -702,7 +701,15 @@ header {
     .icon-offer {
     width: 35%;
 }
-
+    .mobile-off {
+        display: none;
+    }
+    .one-col-mobile {
+        display: block;
+    }
+    .one-col-mobile p {
+        text-align: justify;
+    }
 .team-ctnr {
     display: block;
     justify-content: center;
@@ -787,4 +794,9 @@ header {
         .icon-offer {
     width: 30%;
 }
+}
+@media only screen and (min-width: 901px) {
+    .one-col-mobile {
+        display: none;
+    }
 }
