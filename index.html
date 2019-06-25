@@ -40,6 +40,30 @@
       </header>
       <section class="top off">
           <div class="ctnr">
+              <ul id="slides">
+                    <li class="slide showing">
+                        <p>Zakres usług</p>
+                        <h1>POMOC PRAWNA<br/> DLA PRZEDSIĘBIORCÓW</h1>
+                        <button type="button" onclick="location.href='zakres-uslug.html';" value="">Dowiedz się więcej</button>   
+                    </li>
+                    <li class="slide">
+                        <p>Zakres usług</p>
+                        <h1>DOCHODZENIE<br/> WIERZYTELNOŚCI</h1>
+                        <button type="button" onclick="location.href='zakres-uslug.html';" value="">Dowiedz się więcej</button>       
+                    </li>
+                    <li class="slide">
+                        <p>Zakres usług</p>
+                        <h1>ROZWÓD, ALIMENTY<br/> I PODZIAŁ MAJĄTKU</h1>
+                        <button type="button" onclick="location.href='zakres-uslug.html';" value="">Dowiedz się więcej</button>
+                    </li>
+                    <li class="slide">
+                        <p>Zakres usług</p>
+                        <h1>PRAWO ADMINISTRACYJNE<br/> I PRAWO ZAMOWIEŃ PUBLICZNYCH</h1>
+                        <button type="button" onclick="location.href='zakres-uslug.html';" value="">Dowiedz się więcej</button>
+                    </li>
+              </ul>
+            
+<!--
               <div class="slideshow">
                   <div class="slide">
                       <p>Zakres usług</p>
@@ -62,6 +86,7 @@
                       <button type="button" onclick="location.href='zakres-uslug.html';" value="">Dowiedz się więcej</button>
                   </div>
               </div>
+-->
               
           </div>
       </section>
@@ -222,6 +247,11 @@
           
       </script>
       
+      
+<!--      SLIDER-->
+      
+      
+<!--
       <script>
       $(".slideshow > div:gt(0)").hide();
 
@@ -233,6 +263,19 @@ setInterval(function() {
     .end()
     .appendTo('.slideshow');
 }, 3500);</script>
+-->
+      
+      <script>
+          var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,4000);
+
+function nextSlide(){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+      </script>
   </body>
 
 </html>
